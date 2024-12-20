@@ -1,0 +1,10 @@
+<view>
+  <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+          disabled="{{disabled}}" bindtap="goToFundLoan" hover-class="other-button-hover"> 公积金贷款 </button>
+          <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+          disabled="{{disabled}}" bindtap="goToBusinessLoan" hover-class="other-button-hover"> 商业贷款 </button>
+</view>
+
+<mp-dialog title="建设ing" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>建设中，敬请期待</view>
+</mp-dialog>

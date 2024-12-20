@@ -1,0 +1,26 @@
+<view>
+  <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+          disabled="{{disabled}}" bindtap="back" hover-class="other-button-hover"> 返回 </button>
+</view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section__title">贷款金额（万元）</view>
+    <input name="money" placeholder="please input here" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">还款期数（月）</view>
+    <input name="times" placeholder="please input here" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">每月还款额（元）</view>
+    <input name="moneyPerM" placeholder="please input here" />
+  </view>  
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

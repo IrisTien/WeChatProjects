@@ -1,0 +1,15 @@
+<!--pages/result/list/list.wxml-->
+<view class='history-table-wrap'>
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">期数</view>
+          <view class="th th2">偿还本金</view>
+          <view class="th th3">偿还利息</view>
+      </view>
+      <view class="tr" wx:for="{{res}}">
+          <view class="td td1">{{item.time}}</view>
+          <view class="td td2">{{item.principle}}</view>
+          <view class="td td3">{{item.profit}}</view>
+      </view>
+    </view>
+ </view>
